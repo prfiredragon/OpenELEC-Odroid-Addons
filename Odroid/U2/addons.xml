@@ -117,6 +117,35 @@ See this thread on the Openelec forums for howto and demonstration: http://bit.l
     <platform>all</platform>
   </extension>
 </addon>
+<addon id="repository.unofficial.addon.pro"
+                name="Unofficial [COLOR FF757677]Open[/COLOR][COLOR FF8ABEE2]ELEC[/COLOR] (Odroid/arm) Add-ons"
+                version="6.0.1"
+                provider-name="unofficial.addon.pro">
+        <extension point="xbmc.addon.repository"
+                name="Unofficial OpenELEC.tv Add-on Repository">
+                <dir minversion="14.0.0">
+                    <info>http://unofficial.addon.pro/addons/4.3/Odroid/arm/addons.xml</info>
+                    <checksum>http://unofficial.addon.pro/addons/4.3/Odroid/arm/addons.xml.md5</checksum>
+                    <datadir zip="true">http://unofficial.addon.pro/addons/4.3/Odroid/arm</datadir>
+                </dir>
+                <dir minversion="15.0.0">
+                    <info>http://unofficial.addon.pro/addons/6.0/Odroid/arm/addons.xml</info>
+                    <checksum>http://unofficial.addon.pro/addons/6.0/Odroid/arm/addons.xml.md5</checksum>
+                    <datadir zip="true">http://unofficial.addon.pro/addons/6.0/Odroid/arm</datadir>
+                </dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>Unofficial addon repository for OpenELEC</summary>
+                <description>
+[COLOR red]=== BIG FAT WARNING ===[/COLOR]
+Use this repository at your own risk.
+If your house gets burned, it's your fault, not ours.
+We give no guarantee. We give no support.
+                </description>
+                <disclaimer>This is an unofficial addon repository. please don't ask for support in openelec forum / irc channel</disclaimer>
+                <platform>all</platform>
+        </extension>
+</addon>
 <addon id="service.multimedia.vdr-addon"
        name="VDR PVR Backend"
        version="6.0.1"
@@ -141,34 +170,5 @@ This project describes how to build your own digital satellite receiver and vide
     </disclaimer>
     <platform>all</platform>
   </extension>
-</addon>
-<addon id="repository.unofficial.addon.pro"
-                name="Unofficial [COLOR FF757677]Open[/COLOR][COLOR FF8ABEE2]ELEC[/COLOR] (Odroid/arm) Add-ons"
-                version="6.0.0"
-                provider-name="unofficial.addon.pro">
-        <extension point="xbmc.addon.repository"
-                name="Unofficial OpenELEC.tv Add-on Repository">
-                <dir minversion="14.0.0">
-                    <info>http://unofficial.addon.pro/addons/4.3/Odroid/arm/addons.xml</info>
-                    <checksum>http://unofficial.addon.pro/addons/4.3/Odroid/arm/addons.xml.md5</checksum>
-                    <datadir zip="true">http://unofficial.addon.pro/addons/4.3/Odroid/arm</datadir>
-                </dir>
-                <dir minversion="14.9.0">
-                    <info>http://unofficial.addon.pro/addons/6.0/Odroid/arm/addons.xml</info>
-                    <checksum>http://unofficial.addon.pro/addons/6.0/Odroid/arm/addons.xml.md5</checksum>
-                    <datadir zip="true">http://unofficial.addon.pro/addons/6.0/Odroid/arm</datadir>
-                </dir>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-                <summary>Unofficial addon repository for OpenELEC</summary>
-                <description>
-[COLOR red]=== BIG FAT WARNING ===[/COLOR]
-Use this repository at your own risk.
-If your house gets burned, it's your fault, not ours.
-We give no guarantee. We give no support.
-                </description>
-                <disclaimer>This is an unofficial addon repository. please don't ask for support in openelec forum / irc channel</disclaimer>
-                <platform>all</platform>
-        </extension>
 </addon>
 </addons>
